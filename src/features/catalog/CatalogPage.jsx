@@ -13,19 +13,17 @@ export function CatalogPage() {
     ];
 
     function filterProducts(search, selectedCategory) {
-        return productsData.filter((product) => {
-            const matchesSearch = product.name
-                .toLowerCase()
-                .includes(search.toLowerCase());
-
-            const matchesCategory =
-                selectedCategory === "Todas" ||
-                product.category === selectedCategory;
-
-            return matchesSearch && matchesCategory;
-        });
+        /*
+           Crie uma função para filtrar os produtos.
+           Ela deve:
+           - receber a lista de produtos, o texto de busca e a categoria selecionada
+           - retornar apenas os produtos cujo nome contenha o texto de busca
+             (comparação sem diferenciar maiúsculas/minúsculas)
+           - retornar todos os produtos quando a categoria selecionada for "Todas"
+           - retornar apenas produtos da categoria selecionada caso contrário
+       */
     }
-    
+
     const filteredProducts = filterProducts(search, selectedCategory);
 
     return (

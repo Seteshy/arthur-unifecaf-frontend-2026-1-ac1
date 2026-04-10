@@ -14,10 +14,6 @@ export function ProductCard({ name, price, category, image }) {
                 dentro da pasta "/src/assets/images/"
                 - image : Imagem do produto, exemplo: "/src/assets/images/produto.jpg"
             */}
-            <img src={image} alt={name} className="product-image" />
-            <div>{name}</div>
-            <p>Categoria: {category}</p>
-            <p><strong>R$ {price.toFixed(2)}</strong></p>
         </div>
     );
 }

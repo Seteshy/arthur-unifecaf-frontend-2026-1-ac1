@@ -12,9 +12,6 @@ export function ProductList({ products }) {
 
                 <ProductCard key={product.id} {...product} />
             */}
-            {products.map((product) => (
-                <ProductCard key={product.id} {...product} />
-            ))}
         </section>
     );
 }
