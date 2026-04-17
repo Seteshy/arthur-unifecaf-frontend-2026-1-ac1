@@ -2,6 +2,7 @@ import { useState } from "react";
 import productsData from "./data/products.json";
 import { SearchBar } from "./components/SearchBar";
 import { ProductList } from "./components/ProductList";
+import { CategoriesNav } from "./components/CategoriesNav";
 
 export function CatalogPage() {
     const [search, setSearch] = useState("");
@@ -9,7 +10,7 @@ export function CatalogPage() {
 
     const categories = [
         "Todas",
-        ...new Set(productsData.map((product) => product.category)),
+        ...new Set(productsData.map((p) => p.category)),
     ];
 
     function filterProducts(search, selectedCategory) {
@@ -21,28 +22,31 @@ export function CatalogPage() {
              (comparação sem diferenciar maiúsculas/minúsculas)
            - retornar todos os produtos quando a categoria selecionada for "Todas"
            - retornar apenas produtos da categoria selecionada caso contrário
-       */
+        */
+        return productsData.filter((product) => {
+            const matchesSearch = product.name
+                .toLowerCase()
+                .includes(search.toLowerCase());
+        const matchesCategory =
+            selectedCategory === "Todas" || product.category === selectedCategory;
+        return matchesSearch && matchesCategory;
+        });
     }
 
     const filteredProducts = filterProducts(search, selectedCategory);
 
     return (
         <main style={{ padding: "20px" }}>
-            <h1>Loja de produtos</h1>
-            <nav className="category-menu">
-                {categories.map((category) => (
-                    <button
-                        key={category}
-                        className={category === selectedCategory ? "active" : ""}
-                        onClick={() => setSelectedCategory(category)}
-                    >
-                        {category}
-                    </button>
-                ))}
-            </nav>
+            <h1>Loja de Produtos</h1>
 
-            <SearchBar search={search} setSearch={setSearch} />
-            <ProductList products={filteredProducts} />
+            <CategoriesNav
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onSelect={setSelectedCategory}
+            />
+
+        <SearchBar search={search} setSearch={setSearch} />
+        <ProductList products={filteredProducts} />
         </main>
     );
 }
