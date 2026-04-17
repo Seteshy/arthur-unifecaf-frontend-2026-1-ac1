@@ -11,7 +11,10 @@ export function ProductList({ products }) {
                 consiga distinguir cada elemento customizado
 
                 <ProductCard key={product.id} {...product} />
-            */}
+            */
+            products.map((product) => (
+            <ProductCard key={product.id} {...product} />
+            ))}
         </section>
     );
 }
