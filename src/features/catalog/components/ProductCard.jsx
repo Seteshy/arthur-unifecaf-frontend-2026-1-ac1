@@ -14,6 +14,17 @@ export function ProductCard({ name, price, category, image }) {
                 dentro da pasta "/src/assets/images/"
                 - image : Imagem do produto, exemplo: "/src/assets/images/produto.jpg"
             */}
+            <img className="product-image" src={image} alt={name} />
+            <div className="product-info">
+            <h2 className="product-name">{name}</h2>
+            <p className="product-category">{category}</p>
+            <p className="product-price">
+                {price.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+            })}
+            </p>
+            </div>
         </div>
     );
 }
