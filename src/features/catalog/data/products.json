@@ -1,30 +1,86 @@
 [
   {
     "id": 1,
-    "name": "Produto Exemplo",
-    "price": 90.89,
-    "category": "Categoria",
-    "image": "/src/assets/images/product.jpg"
+    "name": "Cajado orb draconico",
+    "price": 1500,
+    "category": "Cajados",
+    "image": "https://static.wikia.nocookie.net/dragonquest/images/0/0c/DQVIII_-_Wizard%27s_staff.png/revision/latest?cb=20171130060920"
   },
   {
     "id": 2,
-    "name": "Produto Exemplo",
-    "price": 90.89,
-    "category": "Categoria1",
-    "image": "/src/assets/images/product.jpg"
+    "name": "Cajado do poder",
+    "price": 2000,
+    "category": "Cajados",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/49751/401/1000/1000/638853485827662678.png"
   },
   {
     "id": 3,
-    "name": "Produto Exemplo3",
-    "price": 90.89,
-    "category": "Categoria2",
-    "image": "/src/assets/images/product.jpg"
+    "name": "Cajado da serpente",
+    "price": 750,
+    "category": "Cajados",
+    "image": "https://cdn.fireemblemwiki.org/thumb/c/c6/FEWATH_Magic_Staff.png/200px-FEWATH_Magic_Staff.png"
   },
   {
     "id": 4,
-    "name": "Produto Exemplo4",
-    "price": 90.89,
-    "category": "Categoria2",
-    "image": "/src/assets/images/product.jpg"
+    "name": "Cajado da natureza",
+    "price": 3200,
+    "category": "Cajados",
+    "image": "https://static.wikia.nocookie.net/elderscrolls/images/2/28/Mage%27s_Staff.png/revision/latest?cb=20120227191529"
+  },
+  {
+    "id": 5,
+    "name": "Tomo da destruicao",
+    "price": 5000,
+    "category": "Tomos",
+    "image": "https://static.wikia.nocookie.net/elderscrolls/images/1/1b/DestructionSkillBook.png/revision/latest?cb=20130119021226"
+  },
+  {
+    "id": 6,
+    "name": "Tomo da ilusao",
+    "price": 5100,
+    "category": "Tomos",
+    "image": "https://static.wikia.nocookie.net/elderscrolls/images/8/86/IllusionSkillBook.png/revision/latest?cb=20130119021250"
+  },
+  {
+    "id": 7,
+    "name": "Tomo da alteracao",
+    "price": 5300,
+    "category": "Tomos",
+    "image": "https://static.wikia.nocookie.net/elderscrolls/images/3/37/AlterationSkillBook.png/revision/latest?cb=20130119021308"
+  },
+  {
+    "id": 8,
+    "name": "Tomo da restauracao",
+    "price": 5700,
+    "category": "Tomos",
+    "image": "https://static.wikia.nocookie.net/spartanmazda/images/6/60/RestorationSkillBook.png/revision/latest?cb=20250524221532"
+  },
+  {
+    "id": 9,
+    "name": "Varinha de madeira",
+    "price": 600,
+    "category": "Varinhas",
+    "image": "https://runescape.wiki/images/Wizard_wand_detail.png?b1ecd"
+  },
+  {
+    "id": 10,
+    "name": "Varinha de jade",
+    "price": 10200,
+    "category": "Varinhas",
+    "image": "https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/images_without_background/4fdf6acd-1b7e-44de-907b-02158b7a2a97.png"
+  },
+  {
+    "id": 11,
+    "name": "Varinha de batalha",
+    "price": 6900,
+    "category": "Varinhas",
+    "image": "https://www.dndbeyond.com/avatars/thumbnails/41643/740/1000/1000/638506870261031015.png"
+  },
+  {
+    "id": 12,
+    "name": "Varinha de cristal",
+    "price": 4900,
+    "category": "Varinhas",
+    "image": "https://static.vecteezy.com/system/resources/previews/068/872/916/non_2x/mystical-staff-with-glowing-orb-featuring-intricate-designs-and-spiral-handle-perfect-for-enchanting-spells-and-spiritual-rituals-png.png"
   }
 ]
